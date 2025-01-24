@@ -2,8 +2,8 @@ describe('Automation Task', () => {
  it('Add Package', ()=>{
   //logging-in
   cy.visit("https://ecspro-qa.kloudship.com")
-  cy.get('#login-email').click().type("kloudship.qa.automation@mailinator.com")
-  cy.get('#login-password').click().type("Password1")
+  cy.get('#login-email').click().type("")// website link need to be here
+  cy.get('#login-password').click().type("") // password need to typed manually can't share here
   cy.get('#login-btn').click()
   cy.wait(2000)
   
